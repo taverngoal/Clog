@@ -10,7 +10,7 @@ config :clog, Clog.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   cache_static_lookup: false,
-  watchers: [{Path.expand("node_modules/brunch/bin/brunch"), ["watch"]}]
+  watchers: [{"node", [Path.expand("../node_modules/brunch/bin/brunch", __DIR__), "watch"]}]
 
 # Watch static and templates for browser reloading.
 # *Note*: Be careful with wildcards. Larger projects
