@@ -27,8 +27,17 @@ exports.config = {
       // Do not use ES6 compiler in vendor code
       ignore: [/^(vendor)/]
     },
-    coffeescript:{
+    coffeescript: {
       bare: true
+    },
+    uglify: {
+      mangle: true,
+      compress: {
+        global_defs: {
+          DEBUG: false
+        }
+      }
     }
+
   }
 };

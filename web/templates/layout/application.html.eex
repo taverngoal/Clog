@@ -31,7 +31,6 @@
     <script>require("web/static/js/app")</script>
     <script>
       var a = require('web/static/js/init')
-      a.abc()
     </script>
   </body>
 </html>
