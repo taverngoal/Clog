@@ -11,7 +11,8 @@ config :clog, Clog.Endpoint,
   secret_key_base: "eIufc8BCd7zHwO6JTbJKoov7hOtNkECj2xhniMonmAbxDdOnjTM45Xtj3WDKZ67Z",
   debug_errors: false,
   pubsub: [name: Clog.PubSub,
-           adapter: Phoenix.PubSub.PG2]
+           adapter: Phoenix.PubSub.PG2],
+  server: true
 
 # Configures Elixir's Logger
 config :logger, :console,

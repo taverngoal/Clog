@@ -15,7 +15,7 @@ defmodule Clog.Mixfile do
   # Type `mix help compile.app` for more information
   def application do
     [mod: {Clog, []},
-     applications: [:phoenix, :cowboy, :logger, :exrm]]
+     applications: [:phoenix, :cowboy, :logger, :exrm, :ecto, :postgrex]]
   end
 
   # Specifies your project dependencies
