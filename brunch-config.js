@@ -32,11 +32,7 @@ exports.config = {
     },
     uglify: {
       mangle: true,
-      compress: {
-        global_defs: {
-          DEBUG: false
-        }
-      }
+      compress: true
     }
 
   }
