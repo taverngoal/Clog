@@ -1,0 +1,58 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+    font-family:Monospace;
+    font-size:13px;
+    text-align:center;
+    font-weight: bold;
+    text-align:center;
+}
+
+a {
+    color:#0078ff;
+}
+
+
+html, body { height: 100% }
+#mask {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #eee;
+    /*background: -webkit-gradient(linear, 0 0, 0 100%, from(#bbb), to(#eee));*/
+    transition: background 2s;
+}
+#header {height: 300px; font-size: 100px;}
+#content {border: 1px solid #bbb; border-radius: 20px; padding:20px;background: #fff; }
+.height100 {
+    height: 100%
+}
+
+#logo{
+    width: 180px; border-radius: 50%;  box-shadow: 0 0 0 1px #aaa; position: absolute; z-index: 999;
+}
+
+@keyframes logo_animation
+{
+    from {background: red;}
+    to {background: yellow;}
+}
+
+@-moz-keyframes logo_animation /* Firefox */
+{
+    from {background: red;}
+    to {background: yellow;}
+}
+
+@-webkit-keyframes logo_animation /* Safari 和 Chrome */
+{
+    from {background: red;}
+    to {background: yellow;}
+}
+
+@-o-keyframes logo_animation /* Opera */
+{
+    from {background: red;}
+    to {background: yellow;}
+}

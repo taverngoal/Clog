@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<html lang="en" ng-app="Clog" ng-controller="main">
 
-    <title>Hello Phoenix!</title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Tavern">
 
-  <body>
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
-        </ul>
-        <span class="logo"></span>
-      </div>
+  <title>Hello Phoenix!</title>
+  <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
 
-      <%= @inner %>
+  <script id="vs" type="x-shader/x-vertex">
+    varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 ); }
 
-      <div class="footer">
-        <p><a href="http://phoenixframework.org">phoenixframework.org</a></p>
-      </div>
+  </script>
 
-    </div> <!-- /container -->
+  <script id="fs" type="x-shader/x-fragment">
+    uniform sampler2D map; varying vec2 vUv; void main() { float depth = gl_FragCoord.z / gl_FragCoord.w; gl_FragColor = texture2D( map, vUv ); gl_FragColor.w *= pow( gl_FragCoord.z, 20.0 ); }
+
+  </script>
+</head>
+
+<body>
+  <%=@ inner %>
+    <!-- /container -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
-    <script>require("web/static/js/app")</script>
     <script>
-      var a = require('web/static/js/init')
+      require("web/static/js/app")
+      require('web/static/js/init')
+      require('web/static/js/cloud')
     </script>
-  </body>
+</body>
+
 </html>

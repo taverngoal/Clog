@@ -8,7 +8,7 @@ config :clog, Clog.Endpoint,
 
 # Configure your database
 config :clog, Clog.Repo,
-  adapter: Ecto.Adapters.Postgres,
+  adapter: Ecto.Adapters.MySQL,
   username: "postgres",
   password: "postgres",
   database: "clog_prod"

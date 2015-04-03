@@ -34,6 +34,5 @@ exports.config = {
       mangle: true,
       compress: true
     }
-
   }
 };
