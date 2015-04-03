@@ -30,6 +30,6 @@ config :logger, :console, format: "[$level] $message\n"
 # Configure your database
 config :clog, Clog.Repo,
   adapter: Ecto.Adapters.MySQL,
-  username: "postgres",
-  password: "postgres",
+  username: "root",
+  password: "901001",
   database: "clog_dev"
