@@ -24,7 +24,8 @@ init = () ->
     logo.css({
         transition: "width 2s, top 2s, left 2s",
         left: ($(window).width() - logo.width()) / 2,
-        top: ($(window).height() - 250) / 2
+        top: ($(window).height() - 250) / 2,
+        display: 'block'
     } ) ;
 
     setTimeout(() ->

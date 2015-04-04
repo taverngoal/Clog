@@ -1,12 +1,9 @@
 body {
     margin: 0px;
-    overflow: hidden;
-    font-family:Monospace;
-    font-size:13px;
-    text-align:center;
-    font-weight: bold;
-    text-align:center;
+    color: #444
 }
+
+footer{ height:50px;  line-height:50px; }
 
 a {
     color:#0078ff;
@@ -24,35 +21,25 @@ html, body { height: 100% }
     transition: background 2s;
 }
 #header {height: 300px; font-size: 100px;}
-#content {border: 1px solid #bbb; border-radius: 20px; padding:20px;background: #fff; }
+#content {border: 1px solid #bbb; border-radius: 20px; padding:20px;background: #fff;
+ box-shadow:0 -2px 5px 1px #eee inset
+ }
 .height100 {
     height: 100%
 }
 
 #logo{
-    width: 180px; border-radius: 50%;  box-shadow: 0 0 0 1px #aaa; position: absolute; z-index: 999;
+    width: 180px; border-radius: 50%;  box-shadow: 0 0 0 1px #aaa; position: absolute; z-index: 999; display:none
 }
 
-@keyframes logo_animation
-{
-    from {background: red;}
-    to {background: yellow;}
-}
+article.item {min-height: 300px}
+article.item:hover .head { border-bottom:4px solid #7f9290;}
+  article.item .sider { text-align:center; padding:0; }
+    article.item .sider .date { height:48px; padding:0 5px;  line-height:48px; border-bottom:4px solid #336699; display: inline-block; }
+      article.item .sider .date .day{font-size:28px; display: inline-block; color:#336699;}
+      article.item .sider .year-month { display: inline-block;  line-height:11px; font-size:11px }
+  article.item .interesting { margin-top:15px; text-align:center; color: darkorange; font-size:1.7em; cursor:pointer }
 
-@-moz-keyframes logo_animation /* Firefox */
-{
-    from {background: red;}
-    to {background: yellow;}
-}
-
-@-webkit-keyframes logo_animation /* Safari 和 Chrome */
-{
-    from {background: red;}
-    to {background: yellow;}
-}
-
-@-o-keyframes logo_animation /* Opera */
-{
-    from {background: red;}
-    to {background: yellow;}
-}
+article.item .head { font-size: 28px; border-bottom:4px solid #eaedee; height:48px; line-height:48px }
+  article.item .head .open-new { color:#7f9290; font-size:24px; cursor: pointer }
+article.item .content { padding: 10px 0; line-height:1.8em }

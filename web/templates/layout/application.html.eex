@@ -32,5 +32,9 @@
       require('web/static/js/cloud')
     </script>
 </body>
+<footer class="text-center">
+  Tavern &copy; 2015
+
+</footer>
 
 </html>

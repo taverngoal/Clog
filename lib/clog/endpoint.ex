@@ -4,7 +4,7 @@ defmodule Clog.Endpoint do
   # Serve at "/" the given assets from "priv/static" directory
   plug Plug.Static,
     at: "/", from: :clog,
-    only: ~w(css images js favicon.ico robots.txt)
+    only: ~w(css images js favicon.ico fonts robots.txt)
 
   plug Plug.Logger
 
