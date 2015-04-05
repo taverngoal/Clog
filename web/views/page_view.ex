@@ -1,3 +1,3 @@
-defmodule Clog.PageView do
+defmodule Clog.ArticleView do
   use Clog.Web, :view
 end

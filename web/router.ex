@@ -2,7 +2,7 @@ defmodule Clog.Router do
   use Phoenix.Router
 
   pipeline :browser do
-    plug :accepts, ["html"]
+    plug :accepts, ["html", "json", "text"]
     plug :fetch_session
     plug :fetch_flash
     plug :protect_from_forgery
@@ -15,7 +15,9 @@ defmodule Clog.Router do
   scope "/", Clog do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get "/", ArticleController, :index
+    resources "articles", ArticleController, except: [:index]
+    resources "sessions", SessionController, only: [:new, :create, :delete]
   end
 
   # Other scopes may use custom stacks.

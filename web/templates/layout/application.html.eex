@@ -23,14 +23,28 @@
 </head>
 
 <body>
-  <%=@ inner %>
-    <!-- /container -->
-    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
-    <script>
-      require("web/static/js/app")
-      require('web/static/js/init')
-      require('web/static/js/cloud')
-    </script>
+  <img id="logo" src="/images/tavern.jpg" class="center-block img-circle">
+
+  <div class="container">
+    <div class="row" id="header">
+    </div>
+    <div class="row" id="wrap">
+      <div id="content" class="col-lg-10 col-lg-offset-1">
+        <%=@ inner %>
+          <div id="disqus_thread"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="mask">
+  </div>
+  <!-- /container -->
+  <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  <script>
+    require("web/static/js/app")
+    require('web/static/js/init')
+    require('web/static/js/cloud')
+  </script>
 </body>
 <footer class="text-center">
   Tavern &copy; 2015

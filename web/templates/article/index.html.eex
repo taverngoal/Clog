@@ -1,0 +1,53 @@
+<p> <i class="fa fa-tags"></i> 日常 \ 兴趣 \ 生活 \ 技术 </p>
+<article class="row item">
+  <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 sider">
+    <div class="date">
+      <div class="day">
+        04
+      </div>
+      <div class="year-month">04
+        <br>15</div>
+    </div>
+    <div class="interesting">
+      <i class="fa fa-heart-o"></i>
+    </div>
+  </div>
+  <div class="col-lg-11 col-md-11 col-sm-11  col-xs-11">
+    <div class="head">
+      <span class="title">测试测试测试</span>
+      <span class="pull-right open-new"><i class="fa fa-share-square-o"></i> </span>
+    </div>
+
+    <div class="content">
+      一加OxygenOS今天下午正式发布，我们迅速下载并安装了这一版本试用，OxygenOS基于Android 5.0.2版本开发，相比之前使用的Color OS，OxygenOS的易用性有所提升，在一加手机上的操作也十分流畅。值得注意的是，由于正处于初步完工的阶段，系统并没有经过深度的修改，与Android Lolipop原生版本的体验较为接近，由于是国际版，许多谷歌Android原生内容并没有像国内版本一样被清理掉。以下是我们的第一手截图：
+    </div>
+    <div class="foot">
+    </div>
+  </div>
+</article>
+<article class="row item">
+  <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 sider">
+    <div class="date">
+      <div class="day">
+        04
+      </div>
+      <div class="year-month">04
+        <br>15</div>
+    </div>
+    <div class="interesting">
+      <i class="fa fa-heart-o"></i>
+    </div>
+  </div>
+  <div class="col-lg-11 col-md-11 col-sm-11  col-xs-11">
+    <div class="head">
+      <span class="title">测试测试测试</span>
+      <span class="pull-right open-new"><i class="fa fa-share-square-o"></i> </span>
+    </div>
+
+    <div class="content">
+      一加OxygenOS今天下午正式发布，我们迅速下载并安装了这一版本试用，OxygenOS基于Android 5.0.2版本开发，相比之前使用的Color OS，OxygenOS的易用性有所提升，在一加手机上的操作也十分流畅。值得注意的是，由于正处于初步完工的阶段，系统并没有经过深度的修改，与Android Lolipop原生版本的体验较为接近，由于是国际版，许多谷歌Android原生内容并没有像国内版本一样被清理掉。以下是我们的第一手截图：
+    </div>
+    <div class="foot">
+    </div>
+  </div>
+</article>

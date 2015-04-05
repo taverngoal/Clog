@@ -5,7 +5,7 @@ defmodule Clog.Config do
   schema "configs" do
     field :key, :string, unique: true
     field :value, :string
-    field :created_at, :datetime
+    field :inserted_at, :datetime
     field :updated_at, :datetime
 
   end

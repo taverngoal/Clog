@@ -66,7 +66,7 @@ function init() {
   camera.position.z = 6000; // reset later
 
   // texture image
-  var texture = THREE.ImageUtils.loadTexture('images/cloud10.png');
+  var texture = THREE.ImageUtils.loadTexture('/images/cloud10.png');
   texture.magFilter = THREE.LinearMipMapLinearFilter;
   texture.minFilter = THREE.LinearMipMapLinearFilter;
 
