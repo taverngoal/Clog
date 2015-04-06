@@ -1,4 +1,8 @@
-<p> <i class="fa fa-tags"></i> 日常 \ 兴趣 \ 生活 \ 技术 </p>
+<p>
+  <span><i class="fa fa-tags"></i> &nbsp;日常 \ 兴趣 \ 生活 \ 技术</span>
+  <span class="pull-right">
+    <a href="<%=Clog.Router.Helpers.session_path(Endpoint, :new) %>"> <i class="fa fa-user"></i> </a></span>
+</p>
 <article class="row item">
   <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 sider">
     <div class="date">

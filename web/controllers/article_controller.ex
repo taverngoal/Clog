@@ -1,10 +1,12 @@
 defmodule Clog.ArticleController do
   use Clog.Web, :controller
 
+  alias Clog.Services.Config
   plug :action
   plug :render when action in [:index, :show]
 
   def index(conn, _params) do
+    Config.seed_data
     conn
   end
 

@@ -11,4 +11,7 @@ defmodule Clog.Services.Toolkit do
           |> :erlang.list_to_bitstring
   end
 
+  # def authorized?(conn) do
+  #   if get_session(conn, :user) == true, do: true, else: false
+  # end
 end

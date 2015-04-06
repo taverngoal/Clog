@@ -7,7 +7,7 @@ defmodule Clog.Article do
     field :views, :integer, null: false, default: 0
     field :enable, :boolean, default: true, null: false
     field :category_id, :integer
-    field :inserted_at, :datetime
-    field :updated_at, :datetime
+    field :inserted_at, Ecto.DateTime, default: Ecto.DateTime.local
+    field :updated_at, Ecto.DateTime, default: Ecto.DateTime.local
   end
 end

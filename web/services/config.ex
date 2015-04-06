@@ -14,13 +14,32 @@ defmodule Clog.Services.Config do
     end
   end
 
-  def secret_key() do
+  def secret_key do
     key("secret_key")
   end
 
-  def login(username, password) do
+  def initialized do
+    key("initialized")
+  end
+
+  def login(conn, username, password) do
     md5_pwd = Toolkit.md5("#{password}#{secret_key}")
-    if "#{username}#{md5_pwd}" == "#{key("username")}#{key("password")}",
-      do: true, else: false
+    if "#{username}#{md5_pwd}" == "#{key("username")}#{key("password")}" do
+      true
+    else
+      false
+    end
+  end
+
+  def seed_data do
+    if initialized != "true" do
+      _secret_key = "1234567890"
+      Repo.transaction(fn ->
+        Repo.insert(%Clog.Config{key: "secret_key", value: _secret_key})
+        Repo.insert(%Clog.Config{key: "username", value: "tavern"})
+        Repo.insert(%Clog.Config{key: "password", value: Toolkit.md5("901001#{_secret_key}")})
+        Repo.insert(%Clog.Config{key: "initialized", value: "true"})
+      end)
+    end
   end
 end
